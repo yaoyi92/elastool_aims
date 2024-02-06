@@ -56,7 +56,8 @@ def calc_stress(pos_optimized, cell_strain, method_stress_statistics, stress_set
         
     # calculate stresses via static or molecular dynamics at fixed pressure and/or temperature
     #vasp_run(step, kpoints_file_name, cwd)
-    pos_strain_optimized = aims_run("srun /u/yiy/scratch/aims/FHIaims_cbmvbm_cube/build_Feb2_2024_cpu/aims.x > aims.out")
+    #pos_strain_optimized = aims_run("srun /u/yiy/scratch/aims/FHIaims_cbmvbm_cube/build_Feb2_2024_cpu/aims.x > aims.out")
+    pos_strain_optimized = aims_run(indict['parallel_submit_command'][0])
     atoms_tmp = ase.io.aims.read_aims_output("aims.out")
 
     run_mode = int(indict['run_mode'][0])

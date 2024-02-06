@@ -35,7 +35,8 @@ def optimize_initial_str(pos_conv, cwd, parameters):
     #calculator = Aims(directory="./", parameters=parameters)
     calculator = Aims("",directory="./")
     calculator.template.write_input(calculator.profile, calculator.directory, pos_conv, parameters, ["energy"])
-    pos_optimized = aims_run("srun /u/yiy/scratch/aims/FHIaims_cbmvbm_cube/build_Feb2_2024_cpu/aims.x > aims.out")
+    #pos_optimized = aims_run("srun /u/yiy/scratch/aims/FHIaims_cbmvbm_cube/build_Feb2_2024_cpu/aims.x > aims.out")
+    pos_optimized = aims_run(indict['parallel_submit_command'][0])
 
     chdir('..')
 
