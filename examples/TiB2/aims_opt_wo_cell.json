@@ -1,0 +1,13 @@
+{
+  "xc": "pbesol",
+  "species_dir": "/u/yiy/scratch/aims/FHIaims/species_defaults/defaults_2020/intermediate_tight",
+  "sc_accuracy_rho": 1e-06,
+  "sc_accuracy_forces": 0.0001,
+  "relativistic": "atomic_zora scalar",
+  "walltime": 40000.0,
+  "sc_init_iter": 200,
+  "output_level": "MD_light",
+  "relax_geometry": "trm 0.001",
+  "relax_unit_cell": "none",
+  "compute_analytical_stress": ".true."
+}
