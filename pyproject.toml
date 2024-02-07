@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elastool_aims"
+version = "1.0"
+description = "Elastic tool for zero and finite-temperature elastic constants and mechanical properties calculations for FHI-aims"
+authors = [{name = "Yi Yao", email = "yaoyi92@gmail.com"}]
+license = {text = "GNU GPL version 3"}
+urls = {Homepage = "https://github.com/yaoyi92/elastool_aims"}
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "seaborn",
+    "pymatgen",
+    "kaleido",
+    "plotly",
+    "spglib",
+    "ase",
+    "pyvista",
+    "selenium",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+script-files = ["bin/elastool_aims"]
+include-package-data = false
