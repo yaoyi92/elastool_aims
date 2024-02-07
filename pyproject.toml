@@ -19,7 +19,7 @@ dependencies = [
     "kaleido",
     "plotly",
     "spglib",
-    "ase",
+    "ase > 3.22.9",
     "pyvista",
     "selenium",
 ]
